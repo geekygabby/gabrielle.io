@@ -5,25 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabrielle.io</title>
   <style>
+    /* Navbar (notification bar) */
     .navbar {
-      background: #f0f0f0;
-      padding: 10px;
+      background-color: #333;   /* dark background */
+      color: white;             /* white text */
+      padding: 12px 20px;       /* spacing inside */
+      position: fixed;          /* stays at top even when scrolling */
+      top: 0;
+      left: 0;
+      width: 100%;              /* full width */
+      z-index: 1000;            /* stays on top of other content */
+      display: flex;
+      justify-content: space-between; /* space links apart if needed */
+      align-items: center;
     }
+
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 15px;
-      padding: 0;
+      gap: 20px;                /* space between links */
       margin: 0;
+      padding: 0;
     }
+
     .nav-links a {
       text-decoration: none;
-      color: black;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Push down the main content so it doesn’t hide under fixed nav */
+    main {
+      margin-top: 70px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <nav class="navbar">
+    <span>Gabrielle.io!</span>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
@@ -32,14 +57,18 @@
 
   <main>
     <h1>gabrielle.io</h1>
-    <p>Discover my fun projects here...</p>
+    <p>
+      Discover my fun projects here<sup><a href="#footnote1" id="ref1">1</a></sup>...
+    </p>
     <a href="https://www.example.com">Visit Example</a>
+  </main>
+
   <footer>
+    <hr>
     <p id="footnote1">
-      Built and Designed by Gabrielle Williams
-      All Rights Reserved
+      1. This is a sample footnote about your projects. 
+      <a href="#ref1">↩ Back</a>
     </p>
   </footer>
-  </main>
 </body>
 </html>
