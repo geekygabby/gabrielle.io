@@ -9,18 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
   <style>
-    /* Apply the code-style font to the whole page */
+    /* Apply code-style font and dark theme to the whole page */
     body {
       font-family: 'Fira Code', monospace;
-      background-color: #fdfdfd;
-      color: #222;
+      background-color: #000000; /* black background */
+      color: white;              /* white text */
       line-height: 1.6;
       margin: 0;
     }
 
     /* Navbar (notification bar) */
     .navbar {
-      background-color: #333;
+      background-color: #000000; /* black navbar */
       color: white;
       padding: 12px 20px;
       position: fixed;
@@ -31,7 +31,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: 'Fira Code', monospace;
+      box-shadow: 0 2px 5px rgba(255,255,255,0.1); /* subtle white shadow */
     }
 
     .nav-links {
@@ -44,7 +44,7 @@
 
     .nav-links a {
       text-decoration: none;
-      color: white;
+      color: white; /* links are white too */
       font-weight: bold;
     }
 
@@ -56,11 +56,11 @@
 
     h1 {
       font-size: 2rem;
-      color: #333;
+      color: white;
     }
 
     a {
-      color: #007acc;
+      color: #00acee; /* bright link color for contrast */
       text-decoration: none;
     }
 
@@ -71,9 +71,13 @@
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #555;
+      color: #ccc;
       padding: 10px 20px;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #444;
+    }
+
+    sup a {
+      color: #00acee; /* footnote links colored too */
     }
   </style>
 </head>
@@ -89,7 +93,7 @@
   <main>
     <h1>Gabrielle Williams</h1>
     <p>
-      Discover my fun projects here...
+      Discover my fun projects here<sup><a href="#footnote1" id="ref1">1</a></sup>...
     </p>
     <a href="https://geekygabby.github.io/tunacat.github.io/">Advanced Web Development Milestones</a>
   </main>
