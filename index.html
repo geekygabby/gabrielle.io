@@ -5,14 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gabrielle.io</title>
 
-  <!-- Include Laloted font -->
-  <link href="https://fonts.cdnfonts.com/css/laloted" rel="stylesheet">
+  <!-- Google Fonts: Fira Code for body, Quicksand for navbar -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Navbar with Laloted font */
+    /* Entire page uses black background */
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #000000; /* black background */
+      color: white;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Navbar */
     .navbar {
-      font-family: 'laloted', sans-serif; /* Apply Laloted font */
-      background-color: #000000;
+      font-family: 'Quicksand', sans-serif; /* Quicksand font for navbar */
+      background-color: #000000; /* ensure black background */
       padding: 12px 20px;
       position: fixed;
       top: 0;
@@ -20,22 +29,23 @@
       width: 100%;
       z-index: 1000;
       display: flex;
-      justify-content: space-between; /* Logo left, links centered */
+      justify-content: space-between; /* logo left, links centered */
       align-items: center;
-      flex-wrap: nowrap;
       box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     }
 
+    /* Logo remains white */
     .navbar span {
       color: white;
       font-weight: bold;
     }
 
+    /* Navbar links container centered */
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 40px; /* Space between links */
-      margin: 0 auto; /* Centers container */
+      gap: 40px; /* space between links */
+      margin: 0 auto; /* centers container horizontally */
       padding: 0;
     }
 
@@ -45,17 +55,18 @@
 
     .nav-links a {
       text-decoration: none;
-      color: #FFA500; /* Bright orange */
+      color: #FFA500; /* bright orange */
       font-weight: bold;
     }
 
     .nav-links a:hover {
-      color: #FF8C00; /* Slightly darker orange on hover */
+      color: #FF8C00; /* slightly darker orange on hover */
     }
 
     main {
       margin-top: 70px;
       padding: 20px;
+      background-color: #000000; /* ensure main stays black */
     }
 
     /* Scroll Animation */
@@ -78,10 +89,9 @@
       margin-bottom: 10px;
     }
 
-    /* Translucent text under main heading */
     h2, h3 {
       margin: 5px 0;
-      color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+      color: rgba(255, 255, 255, 0.6); /* translucent text */
     }
 
     a {
@@ -99,6 +109,7 @@
       color: #ccc;
       padding: 10px 20px;
       border-top: 1px solid #444;
+      background-color: #000000; /* ensure footer black */
     }
 
     sup a {
@@ -143,7 +154,6 @@
       <h3>
         I am an IT specialist based in Atlanta, Georgia. I specialize in creating responsive, user-friendly web applications and experiences. I have hands-on experience in web development technologies, including HTML, CSS, JavaScript, jQuery, Bootstrap, Tailwind, and a strong foundation in APIs and JSON integration as I have built applications that employ Google Books, Open Library, and TMDb APIs.
       </h3>
-      <!-- Email Button -->
       <a href="mailto:gwill.webdev@gmail.com" class="email-btn">Email Me</a>
     </section>
 
