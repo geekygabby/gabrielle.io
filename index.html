@@ -7,6 +7,8 @@
 
   <!-- Google Font: Fira Code -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <!-- Insaniburger Font -->
+  <link href="https://fonts.cdnfonts.com/css/insaniburger" rel="stylesheet">
 
   <style>
     /* Apply code-style font and dark theme */
@@ -20,7 +22,7 @@
 
     /* Navbar */
     .navbar {
-      font-family: 'Poppins', sans-serif; /* rounded font for navbar */
+      font-family: 'Insaniburger', sans-serif; /* Insaniburger font */
       background-color: #000000;
       padding: 12px 20px;
       position: fixed;
@@ -29,28 +31,25 @@
       width: 100%;
       z-index: 1000;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; /* logo left, links centered */
       align-items: center;
       flex-wrap: nowrap;
       box-shadow: 0 2px 5px rgba(255,255,255,0.1);
     }
 
-    /* Keep Gabrielle.io white */
+    /* Logo remains white */
     .navbar span {
       color: white;
       font-weight: bold;
     }
 
-    /* Navbar links container */
+    /* Navbar links container centered */
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 20px;
-      margin: 0;
+      gap: 40px; /* space between links */
+      margin: 0 auto; /* centers container */
       padding: 0;
-      flex-wrap: nowrap;
-      justify-content: center; /* center links horizontally */
-      flex: 1; /* make the container grow to use available space */
     }
 
     .nav-links li {
