@@ -99,6 +99,8 @@
       margin-top: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.4);
       transition: all 0.3s ease;
+      max-width: 500px;
+      text-align: left;
     }
 
     .project-card:hover {
@@ -115,6 +117,25 @@
 
     .project-card a:hover {
       text-decoration: underline;
+    }
+
+    /* Hidden description */
+    .project-description {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      color: rgba(255, 255, 255, 0.6); /* translucent */
+      font-size: 0.9rem;
+      margin-top: 10px;
+      line-height: 1.4;
+      transform: translateY(10px); /* slight slide effect */
+      transition: max-height 4s linear, opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .project-card:hover .project-description {
+      max-height: 200px; /* expands to show */
+      opacity: 1;
+      transform: translateY(0); /* slides into place */
     }
 
     /* Email Button */
@@ -139,8 +160,8 @@
 
     footer {
       margin-top: 40px;
-      font-size: 0.8em;            /* make text smaller */
-      color: rgba(255, 255, 255, 0.6); /* translucent white */
+      font-size: 0.8em;
+      color: rgba(255, 255, 255, 0.6);
       padding: 10px 20px;
       border-top: 1px solid #444;
       background-color: #000000;
@@ -175,6 +196,12 @@
         <a href="https://geekygabby.github.io/tunacat.github.io/" target="_blank">
           Advanced Web Development Milestones
         </a>
+        <div class="project-description">
+          <p>
+            I developed a multi-page application with jQuery and Google Books and TMDB API. 
+            Additionally, I implemented SQL queries in Oracle to manage, retrieve and update records.
+          </p>
+        </div>
       </div>
     </section>
   </main>
